@@ -1,0 +1,2 @@
+{"preference":"showdeal"}
+{"query":{"bool":{"must":[{"bool":{"must":[{"range":{"percent":{"gte":"-100","lte":"-50","boost":2}}},{"bool":{"must":[{"range":{"percent":{"gte":-100,"lte":-10}}},{"range":{"crawling":{"gte":"now-30m","lte":"now"}}},{"range":{"old_price":{"gte":10,"lte":99999}}}]}}]}}]}},"size":QUERY_SIZE,"_source":{"includes":["*"],"excludes":[]},"from":0,"sort":[{"crawling":{"order":"desc"}}]}
