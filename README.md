@@ -11,7 +11,7 @@ The scripts depends on [DiscordHooks](https://github.com/MeitarR/DiscordHooks), 
 The script will request the new items from [averio](https://elk.averio.de/) website every 30 seconds,
  and post them on Discord channel using Webhook URL.
 
-![Notification sample](https://i.imgur.com/Xg8lHvS.png)
+![Notification sample](https://i.imgur.com/hIBbS6U.png)
 
 The notifications has simple and clean style, but can be edited quickly using DiscordHooks features.
 
