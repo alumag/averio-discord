@@ -24,7 +24,7 @@ The notifications has simple and clean style, but can be edited quickly using Di
 
 2. Run the main script
     ```bash
-    python main.py <webhook_URL> [--username username] [--icon_url icon_url]
+    python main.py <webhook_URL> [--username username] [--icon icon_url]
     ```
 
     Or use help in order to read the manual.
