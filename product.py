@@ -19,9 +19,9 @@ class Product(object):
                  new_price: float, percent: float):
         self.product = product
         self.link = link
-        self.old_price = str(old_price)
-        self.new_price = str(new_price)
-        self.percent = str(percent)
+        self.old_price = '€ {:,.2f}'.format(old_price)
+        self.new_price = '€ {:,.2f}'.format(new_price)
+        self.percent = str(abs(percent))
 
     @property
     def embed(self):
@@ -43,9 +43,9 @@ class Product(object):
         :return: list of EmbedFieldInline
         """
         return [
-            EmbedFieldInline(name="NewPrice", value=self.new_price),
-            EmbedFieldInline(name="OldPrice", value=self.old_price),
-            EmbedFieldInline(name="Percent", value=f"{self.percent}%")
+            EmbedFieldInline(name="New Price", value=self.new_price),
+            EmbedFieldInline(name="Old Price", value=self.old_price),
+            EmbedFieldInline(name="Saving in percent", value=self.percent)
         ]
 
     @property
